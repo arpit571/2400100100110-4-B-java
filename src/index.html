@@ -1,0 +1,311 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StreamFlix | Movies & TV Shows</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="hero-background"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="nav-left">
+            <a href="#" class="logo">STREAMFLIX</a>
+
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#trending">Trending</a>
+                <a href="#movies">Movies</a>
+                <a href="#series">TV Shows</a>
+                <a href="#popular">Popular</a>
+            </nav>
+        </div>
+
+        <div class="nav-right">
+            <button class="search-btn" aria-label="Search">⌕</button>
+
+            <span class="notification">♧</span>
+
+            <div class="profile">
+                <img
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop"
+                    alt="User profile"
+                >
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    <span class="live-dot"></span>
+                    STREAMFLIX ORIGINAL
+                </span>
+
+                <h1>THE<br>LAST<br><span>FRONTIER</span></h1>
+
+                <div class="movie-meta">
+                    <span class="rating">★ 8.9</span>
+                    <span>2026</span>
+                    <span class="age-rating">16+</span>
+                    <span>2 Seasons</span>
+                    <span class="quality">4K ULTRA HD</span>
+                </div>
+
+                <p class="description">
+                    At the edge of civilization, one explorer discovers a
+                    secret that could change humanity forever. A gripping
+                    journey through the unknown begins.
+                </p>
+
+                <div class="genres">
+                    <span>Sci-Fi</span>
+                    <span>Adventure</span>
+                    <span>Thriller</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#trending" class="btn btn-primary">
+                        <span class="play-icon">▶</span>
+                        Watch Now
+                    </a>
+
+                    <a href="#movies" class="btn btn-secondary">
+                        <span class="info-icon">ⓘ</span>
+                        More Info
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span class="featured-label">FEATURED THIS WEEK</span>
+
+                <div class="slider-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Trending Section -->
+        <section class="movie-section" id="trending">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">WHAT'S HOT</span>
+                    <h2>Trending Now <span>↗</span></h2>
+                </div>
+
+                <a href="#movies" class="view-all">View All →</a>
+            </div>
+
+            <div class="movie-row">
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img
+                            src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+                            alt="Oppenheimer poster"
+                        >
+                        <span class="rank">01</span>
+                        <span class="card-rating">★ 8.9</span>
+                        <div class="card-overlay">
+                            <button aria-label="Play Oppenheimer">▶</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Oppenheimer</h3>
+                        <p>2023 <span>•</span> Biography</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img
+                            src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                            alt="Dune Part Two poster"
+                        >
+                        <span class="rank">02</span>
+                        <span class="card-rating">★ 8.5</span>
+                        <div class="card-overlay">
+                            <button aria-label="Play Dune Part Two">▶</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Dune: Part Two</h3>
+                        <p>2024 <span>•</span> Sci-Fi</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img
+                            src="https://image.tmdb.org/t/p/w500/kQs6keheMwCxJxrzV83VUwFtHkB.jpg"
+                            alt="John Wick Chapter 4 poster"
+                        >
+                        <span class="rank">03</span>
+                        <span class="card-rating">★ 7.7</span>
+                        <div class="card-overlay">
+                            <button aria-label="Play John Wick">▶</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>John Wick 4</h3>
+                        <p>2023 <span>•</span> Action</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img
+                            src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+                            alt="Deadpool and Wolverine poster"
+                        >
+                        <span class="rank">04</span>
+                        <span class="card-rating">★ 7.8</span>
+                        <div class="card-overlay">
+                            <button aria-label="Play Deadpool and Wolverine">▶</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Deadpool & Wolverine</h3>
+                        <p>2024 <span>•</span> Action</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img
+                            src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg"
+                            alt="Doctor Strange poster"
+                        >
+                        <span class="rank">05</span>
+                        <span class="card-rating">★ 7.5</span>
+                        <div class="card-overlay">
+                            <button aria-label="Play Doctor Strange">▶</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Doctor Strange</h3>
+                        <p>2022 <span>•</span> Fantasy</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Original Series -->
+        <section class="movie-section series-section" id="series">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">EXCLUSIVE COLLECTION</span>
+                    <h2>StreamFlix Originals</h2>
+                </div>
+
+                <a href="#popular" class="view-all">Explore All →</a>
+            </div>
+
+            <div class="originals-grid">
+
+                <article class="original-card original-one">
+                    <div class="original-content">
+                        <span>SF ORIGINAL SERIES</span>
+                        <h3>Beyond<br>the Void</h3>
+                        <p>Some mysteries are better left undiscovered.</p>
+                        <a href="#movies">Explore Series →</a>
+                    </div>
+                </article>
+
+                <article class="original-card original-two">
+                    <div class="original-content">
+                        <span>SF EXCLUSIVE</span>
+                        <h3>City of<br>Shadows</h3>
+                        <p>Every secret has a price.</p>
+                        <a href="#movies">Explore Series →</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Popular Section -->
+        <section class="movie-section" id="popular">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">FAN FAVORITES</span>
+                    <h2>Popular on StreamFlix</h2>
+                </div>
+            </div>
+
+            <div class="popular-banner">
+                <div class="popular-content">
+                    <span class="section-kicker">YOUR NEXT OBSESSION</span>
+                    <h2>Discover Your<br>Next Favorite.</h2>
+                    <p>
+                        From award-winning films to unforgettable series,
+                        find your next great story.
+                    </p>
+                    <a href="#trending" class="btn btn-primary">
+                        Explore Collection →
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#" class="logo">STREAMFLIX</a>
+
+        <p>Unlimited stories. One destination.</p>
+
+        <div class="footer-links">
+            <a href="#movies">Movies</a>
+            <a href="#series">TV Shows</a>
+            <a href="#popular">About Us</a>
+            <a href="#trending">Help Center</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 StreamFlix. Demo project created for learning.
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
